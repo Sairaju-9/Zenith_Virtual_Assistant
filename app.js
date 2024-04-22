@@ -49,6 +49,12 @@ function takeCommand(message) {
   } else if (message.includes("open twitter")) {
     window.open("https://twitter.com", "_blank");
     speak("Opening Twitter...");
+  } else if (message.includes("open github")) {
+    window.open("https://github.com", "_blank");
+    speak("Opening Twitter...");
+  } else if (message.includes("open linkedin")) {
+    window.open("https://linkedin.com", "_blank");
+    speak("Opening Twitter...");
   } else if (
     message.includes("what is") ||
     message.includes("who is") ||
@@ -88,7 +94,7 @@ function takeCommand(message) {
     window.open("Calculator:///");
     const finalText = "Opening Calculator";
     speak(finalText);
-  } else if (message.includes("Whatsapp")) {
+  } else if (message.includes("open Whatsapp")) {
     window.open("https://web.whatsapp.com/", "_blank");
     const finalText = "Opening WhatsApp";
     speak(finalText);
