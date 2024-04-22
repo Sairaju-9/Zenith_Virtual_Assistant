@@ -49,12 +49,18 @@ function takeCommand(message) {
   } else if (message.includes("open twitter")) {
     window.open("https://twitter.com", "_blank");
     speak("Opening Twitter...");
+  } else if (message.includes("open mail")) {
+    window.open("https://mail.google.com", "_blank");
+    speak("Opening Gmail...");
   } else if (message.includes("open github")) {
     window.open("https://github.com", "_blank");
-    speak("Opening Twitter...");
+    speak("Opening github...");
   } else if (message.includes("open linkedin")) {
     window.open("https://linkedin.com", "_blank");
-    speak("Opening Twitter...");
+    speak("Opening linkedin...");
+  } else if (message.includes("open chatgpt")) {
+    window.open("https://chatgpt.com", "_blank");
+    speak("Opening chatgpt...");
   } else if (
     message.includes("what is") ||
     message.includes("who is") ||
